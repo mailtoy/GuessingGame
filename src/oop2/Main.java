@@ -3,15 +3,14 @@ package oop2;
 /**
  * Game of guessing a secret number.
  * 
- * @author Kanchanok
+ * @author Kanchanok Kannee
  */
 public class Main {
 
 	/**
 	 * The play method plays a game using input from a user.
 	 * 
-	 * @param create
-	 *            object and start the game
+	 * @param create object and start the game
 	 * 
 	 */
 	public static void main(String[] arg) {

@@ -1,19 +1,18 @@
 package oop2;
 
-import java.awt.Checkbox;
 import java.util.Scanner;
 
 /**
  * Game of guessing a secret number.
  * 
- * @author Kanchanok
+ * @author Kanchanok Kannee
  */
 public class GameConsole {
 
 	/**
+	 * The play method plays a game using input from a user.
 	 * 
-	 * @param play
-	 *            game on the console
+	 * @param play game on the console.
 	 * @return the secret number when user guesses it.
 	 */
 	public int play(GuessingGame game) {

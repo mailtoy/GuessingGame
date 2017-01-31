@@ -3,9 +3,9 @@ package oop2;
 import java.util.Random;
 
 /**
- * Game of guessing a secret number.
+ * Game Console of guessing a secret number.
  * 
- * @author Kanchanok
+ * @author Kanchanok Kannee
  */
 public class GuessingGame {
 	private int upperBound;
@@ -16,8 +16,7 @@ public class GuessingGame {
 	/**
 	 * Initialize a new game.
 	 * 
-	 * @param upperbound
-	 *            is the max value for the secret number (>1).
+	 * @param upperbound is the max value for the secret number (>1).
 	 */
 
 	GuessingGame(int upperBound) {
@@ -31,8 +30,7 @@ public class GuessingGame {
 	/**
 	 * Create a random number between 1 and limit.
 	 * 
-	 * @param limit
-	 *            is the upper limit for random number
+	 * @param limit is the upper limit for random number
 	 * @return a random number between 1 and limit (inclusive)
 	 */
 	private int getRandomNumber(int limit) {
@@ -42,8 +40,10 @@ public class GuessingGame {
 	}
 
 	/**
-	 * ) evaluate the user's guess and return true or false. Also prepare a
-	 * hint.
+	 * Guess a number based on a user's input
+	 * 
+	 * @param evaluate the user's guess
+	 * @return true or false. Also prepare a hint.
 	 */
 	public boolean guess(int number) {
 
@@ -77,6 +77,11 @@ public class GuessingGame {
 
 	}
 
+	/**
+	 * set the text of hint
+	 * 
+	 * @param hint is the text that you want to change
+	 */
 	public void setHint(String hint) {
 		this.hint = hint;
 	}
@@ -91,9 +96,5 @@ public class GuessingGame {
 		return count;
 	}
 
-	public void setCount(int count) {
-		this.count = count;
-
-	}
 
 }
