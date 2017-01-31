@@ -47,11 +47,11 @@ public class GuessingGame {
 	 */
 	public boolean guess(int number) {
 
+		count++;
 		boolean check = false;
 		if (number == secret) {
 			check = true;
 			setHint("Correct The secret is " + number);
-			count++;
 			return check;
 		} else {
 			check = false;
@@ -61,7 +61,6 @@ public class GuessingGame {
 				setHint("Sorry,your guess is too large");
 
 			}
-			count++;
 			return check;
 		}
 
